@@ -12,6 +12,8 @@
 		AADC89881E7C0171002C239A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADC89861E7C0171002C239A /* Main.storyboard */; };
 		AADC898A1E7C0171002C239A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADC89891E7C0171002C239A /* Assets.xcassets */; };
 		AADC898D1E7C0171002C239A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADC898B1E7C0171002C239A /* LaunchScreen.storyboard */; };
+		AADC89961E7C01AB002C239A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADC89951E7C01AB002C239A /* AudioToolbox.framework */; };
+		AADC89981E7C0902002C239A /* train01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AADC89971E7C0902002C239A /* train01.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AADC89891E7C0171002C239A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADC898C1E7C0171002C239A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AADC898E1E7C0171002C239A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AADC89951E7C01AB002C239A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AADC89971E7C0902002C239A /* train01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = train01.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADC89961E7C01AB002C239A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				AADC89811E7C0171002C239A /* SampleQuiz */,
 				AADC89801E7C0171002C239A /* Products */,
+				AADC89941E7C01AB002C239A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 		AADC89811E7C0171002C239A /* SampleQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				AADC89971E7C0902002C239A /* train01.mp3 */,
 				AADC89821E7C0171002C239A /* AppDelegate.swift */,
 				AADC89841E7C0171002C239A /* ViewController.swift */,
 				AADC89861E7C0171002C239A /* Main.storyboard */,
@@ -62,6 +69,14 @@
 				AADC898E1E7C0171002C239A /* Info.plist */,
 			);
 			path = SampleQuiz;
+			sourceTree = "<group>";
+		};
+		AADC89941E7C01AB002C239A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AADC89951E7C01AB002C239A /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					AADC897E1E7C0171002C239A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CXCUPKE9MN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADC89981E7C0902002C239A /* train01.mp3 in Resources */,
 				AADC898D1E7C0171002C239A /* LaunchScreen.storyboard in Resources */,
 				AADC898A1E7C0171002C239A /* Assets.xcassets in Resources */,
 				AADC89881E7C0171002C239A /* Main.storyboard in Resources */,
@@ -258,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CXCUPKE9MN;
 				INFOPLIST_FILE = SampleQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.SampleQuiz";
@@ -270,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CXCUPKE9MN;
 				INFOPLIST_FILE = SampleQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.SampleQuiz";
